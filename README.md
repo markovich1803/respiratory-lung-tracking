@@ -14,9 +14,13 @@ Full train+test
 arhivu PNG frejmova, a u samom notebook-u prikazuje video segmentacije, grafik
 i tabelu merenja za levo i desno plućno krilo.
 
-`lung_tracking_training_colab.ipynb` preuzima skup podataka sa linka koji se
-unese u prvoj ćeliji, automatski pronalazi lokalnu `images/` + `masks/`
-strukturu, trenira model i zatim omogućava isti test workflow.
+`lung_tracking_training_colab.ipynb` je potpuni trening + test workflow. U
+prvoj ćeliji se bira izvor podataka. Za javni izvor korisnik unosi direktan ZIP
+link ka zvaničnom COVID Chest X-ray repozitorijumu; notebook zatim preuzima
+sirove fajlove, priprema uparene `images/` i `masks/` PNG fajlove, trenira model
+i prikazuje istoriju treninga, a potom omogućava isti test workflow. Privatni
+V7 export linkovi nisu deo ovog repozitorijuma i po potrebi se ručno unose u
+prvoj ćeliji.
 
 Trening slike nisu deo repozitorijuma. Fine-tunovani checkpoint je uključen
 isključivo za testiranje i demonstraciju inferencije.
