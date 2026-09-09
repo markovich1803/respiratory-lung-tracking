@@ -15,12 +15,12 @@ arhivu PNG frejmova, a u samom notebook-u prikazuje video segmentacije, grafik
 i tabelu merenja za levo i desno plućno krilo.
 
 `lung_tracking_training_colab.ipynb` je potpuni trening + test workflow. U
-prvoj ćeliji se bira izvor podataka. Za javni izvor korisnik unosi direktan ZIP
-link ka zvaničnom COVID Chest X-ray repozitorijumu; notebook zatim preuzima
-sirove fajlove, priprema uparene `images/` i `masks/` PNG fajlove, trenira model
-i prikazuje istoriju treninga, a potom omogućava isti test workflow. Privatni
-V7 export linkovi nisu deo ovog repozitorijuma i po potrebi se ručno unose u
-prvoj ćeliji.
+prvoj ćeliji se bira izvor podataka. Preporučeni izbor je Montgomery + Shenzhen
+paket sa 704 CXR slike i binarnim maskama pluća; unosi se njegov Google Drive
+ili direktan ZIP link. Notebook preuzima sirove fajlove, automatski pronalazi
+slike i maske, priprema standardni `images/` + `masks/` raspored, trenira model
+i prikazuje istoriju treninga, a potom omogućava isti test workflow. Podržan je
+i javni COVID Chest X-ray izvor, kao i opcioni privatni V7 export.
 
 Trening slike nisu deo repozitorijuma. Fine-tunovani checkpoint je uključen
 isključivo za testiranje i demonstraciju inferencije.
